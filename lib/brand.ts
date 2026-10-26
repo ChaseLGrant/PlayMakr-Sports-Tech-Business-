@@ -1,0 +1,21 @@
+/**
+ * Placeholder branding. Change these values to rebrand the whole site.
+ * Anything secret or environment-specific lives in .env, not here.
+ */
+export const brand = {
+  name: "PlayMakr",
+  legalName: "PlayMakr Technologies (placeholder legal entity)",
+  tagline: "Less Software. Better Systems. More Revenue.",
+  description:
+    "PlayMakr builds custom technology that helps sports organizations eliminate unnecessary software, automate operations, and unlock new revenue opportunities.",
+  contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@example.com",
+  programName: "The Founding 100",
+  foundingCap: 100,
+};
+
+export const siteUrl = (
+  process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+).replace(/\/$/, "");
+
+/** Optional scheduling link (Calendly, Cal.com, HubSpot, etc.). */
+export const calendarUrl = process.env.NEXT_PUBLIC_CALENDAR_URL || "";
