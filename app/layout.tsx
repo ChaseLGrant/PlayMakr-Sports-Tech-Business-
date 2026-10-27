@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     "sports business automation",
     "custom software for sports organizations",
     "registration automation",
+    "league management automation",
+    "sports camp registration software",
+    "college athletics revenue",
   ],
   openGraph: {
     type: "website",

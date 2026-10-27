@@ -8,7 +8,7 @@ export const faqs = [
   },
   {
     q: "What types of sports organizations do you work with?",
-    a: "We work with established organizations that have staff, recurring customers and meaningful operating costs: large youth sports clubs, multi-location facilities, academies, tournament and showcase operators, training companies and club sports organizations.",
+    a: "Only sports. We work with leagues and associations, camps, clinics and private training companies, universities and college athletic departments, facilities and multi-sport complexes, clubs and academies, tournament and showcase operators, and other sports businesses that serve athletes and families. If it is sports and it has revenue to grow, it is a fit.",
   },
   {
     q: "How much does custom development cost?",

@@ -4,6 +4,7 @@ import { Footer } from "@/components/site/footer";
 import { PageTracker } from "@/components/site/page-tracker";
 import { Hero } from "@/components/landing/hero";
 import { Problems } from "@/components/landing/problems";
+import { WhoWeServe } from "@/components/landing/who-we-serve";
 import { Solution } from "@/components/landing/solution";
 import { RevenueCalculator } from "@/components/landing/calculator";
 import { HowItWorks } from "@/components/landing/how-it-works";
@@ -64,6 +65,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
       <PageTracker variant={variant} />
       <main id="main">
         <Hero variant={variant} />
+        <WhoWeServe />
         <Problems />
         <Solution />
         <RevenueCalculator />

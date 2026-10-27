@@ -13,6 +13,8 @@ export const organizationTypes = opts([
   { value: "training", label: "Sports training company" },
   { value: "club_sports", label: "Club sports organization" },
   { value: "league", label: "League or association" },
+  { value: "camp_clinic", label: "Camp or clinic" },
+  { value: "university", label: "University or college athletics" },
   { value: "other", label: "Other sports business" },
 ] as const);
 

@@ -48,7 +48,7 @@ export function Problems() {
         id="problem-title"
         eyebrow="The problem"
         title="Your Software Shouldn’t Be Slowing Your Business Down."
-        lede="Most established sports organizations didn’t choose their technology stack. It accumulated one subscription and one workaround at a time, and every gap costs money."
+        lede="Most leagues, camps, clubs and athletic departments didn’t choose their technology stack. It accumulated one subscription and one workaround at a time, and every gap costs money."
       />
       <ul className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.07] sm:grid-cols-2 lg:grid-cols-3">
         {problems.map((p) => (

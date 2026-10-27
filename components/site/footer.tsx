@@ -9,7 +9,7 @@ export function Footer() {
         <div>
           <Logo />
           <p className="mt-4 max-w-sm text-sm leading-relaxed">
-            Custom technology, automation and integrations for established sports organizations.
+            Custom technology, automation and integrations for leagues, camps, clinics, universities and sports businesses.
           </p>
           <a href={`mailto:${brand.contactEmail}`} className="mt-4 inline-block text-sm text-slate-300 hover:text-white">
             {brand.contactEmail}

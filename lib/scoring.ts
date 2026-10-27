@@ -42,7 +42,7 @@ const spendPoints: Record<string, number> = {
   "5000_plus": 10,
   unsure: 4,
 };
-const coreTypes = new Set(["youth_club", "multi_facility", "academy", "tournament", "training", "club_sports"]);
+const coreTypes = new Set(["youth_club", "multi_facility", "academy", "tournament", "training", "club_sports", "league", "camp_clinic", "university"]);
 
 const DECISION_MAKER =
   /\b(owner|co-?owner|founder|co-?founder|ceo|coo|cfo|cto|chief|president|executive director|managing director|director|general manager|gm|vp|vice president|partner|principal|head of)\b/i;

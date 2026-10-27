@@ -13,12 +13,12 @@ export const heroVariants = {
         <span className="text-gradient">More Revenue.</span>
       </>
     ),
-    sub: "We replace complicated workflows and disconnected technology with custom systems that help sports organizations grow revenue, save time, and operate smarter.",
+    sub: "Custom technology for leagues, camps, clinics, universities, facilities and every kind of sports business. We fix the systems that leak revenue and build the ones that grow it.",
   },
   B: {
     headline: (
       <>
-        How Much Money Is Your Sports Organization{" "}
+        How Much Money Is Your League, Camp or Sports Business{" "}
         <span className="text-gradient">Losing to Outdated Systems?</span>
       </>
     ),
@@ -70,7 +70,7 @@ export function Hero({ variant }: { variant: "A" | "B" }) {
           <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-[13px] text-slate-500">
             <li className="flex items-center gap-2"><Dot /> Free technology &amp; revenue audit</li>
             <li className="flex items-center gap-2"><Dot /> Works with your existing software</li>
-            <li className="flex items-center gap-2"><Dot /> Built for established sports organizations</li>
+            <li className="flex items-center gap-2"><Dot /> Built only for sports businesses</li>
           </ul>
         </div>
 

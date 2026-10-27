@@ -7,7 +7,7 @@ export const brand = {
   legalName: "PlayMakr Technologies (placeholder legal entity)",
   tagline: "Less Software. Better Systems. More Revenue.",
   description:
-    "PlayMakr builds custom technology that helps sports organizations eliminate unnecessary software, automate operations, and unlock new revenue opportunities.",
+    "PlayMakr builds custom revenue and automation systems for sports businesses: leagues, camps, clinics, universities, facilities, clubs and tournaments.",
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@example.com",
   programName: "The Founding 100",
   foundingCap: 100,

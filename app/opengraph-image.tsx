@@ -30,7 +30,7 @@ export default function OpengraphImage() {
           <span>Better Systems.</span>
           <span style={{ color: "#86b6ff" }}>More Revenue.</span>
         </div>
-        <div style={{ fontSize: 28, color: "#94a3b8" }}>Custom technology for established sports organizations</div>
+        <div style={{ fontSize: 28, color: "#94a3b8" }}>Revenue systems for leagues, camps, clinics & universities</div>
       </div>
     ),
     size,

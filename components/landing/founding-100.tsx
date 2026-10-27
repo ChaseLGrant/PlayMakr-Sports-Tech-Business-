@@ -21,7 +21,7 @@ const benefits = [
 ];
 
 const criteria = [
-  "An established sports organization",
+  "A sports business: league, camp, clinic, club, facility, university program or similar",
   "Existing customers, members or athletes",
   "Real operational or technology inefficiencies",
   "Interest in investing in better systems",

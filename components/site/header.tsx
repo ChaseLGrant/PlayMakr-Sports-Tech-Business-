@@ -8,6 +8,7 @@ import { CtaLink } from "@/components/ui/tracked-link";
 import { cn } from "@/lib/utils";
 
 const nav = [
+  { href: "/#who-we-serve", label: "Who We Serve" },
   { href: "/#solutions", label: "Solutions" },
   { href: "/#calculator", label: "Calculator" },
   { href: "/#founding-100", label: "Founding 100" },
