@@ -1,17 +1,17 @@
-import { BarChart3, Bell, CreditCard, Gift, LayoutTemplate, ListChecks, Megaphone, Repeat } from "lucide-react";
+import { BarChart3, Bell, CalendarClock, CreditCard, Link2, ListChecks, Users, Zap } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { CtaLink } from "@/components/ui/tracked-link";
 
 const features = [
-  { icon: LayoutTemplate, f: "Branded registration page", b: "Parents sign up in under 2 minutes, on any phone." },
-  { icon: Megaphone, f: "Ads & lead capture done for you", b: "New families find you without you posting a thing." },
-  { icon: Bell, f: "Automated text & email follow-up", b: "Every inquiry gets chased until they register. No lead slips." },
-  { icon: CreditCard, f: "Abandoned sign-up recovery", b: "Win back parents who started checkout and never finished." },
-  { icon: Gift, f: "Early-bird, sibling & referral offers", b: "Families bring families, and you fill spots faster." },
-  { icon: ListChecks, f: "Waitlists & sold-out capture", b: "Turn “we're full” into next session's first sign-ups." },
-  { icon: Repeat, f: "Next-season re-enrollment", b: "Past players get invited back automatically, before they leave." },
-  { icon: BarChart3, f: "Live revenue dashboard", b: "See every lead, sign-up and dollar the system made you." },
+  { icon: Zap, f: "Registration that actually works", b: "Families sign up in minutes on any phone. No more lost forms or abandoned checkouts." },
+  { icon: CreditCard, f: "Payments, balances & reminders", b: "Unpaid fees get chased automatically, so you stop playing bill collector." },
+  { icon: CalendarClock, f: "Scheduling & facility booking", b: "Practices, games, fields and coaches in one place. No double-bookings." },
+  { icon: Bell, f: "Parent & athlete communication", b: "The right message to the right team, automatically. No more group-text chaos." },
+  { icon: Users, f: "Rosters, tryouts & recruiting", b: "Track every player and prospect from interest to signed, without spreadsheets." },
+  { icon: Link2, f: "Connects your existing tools", b: "We patch the holes between the software you already pay for, so nothing gets re-typed." },
+  { icon: ListChecks, f: "Staff & admin automation", b: "Hours of manual busywork gone every week, so staff can coach and sell." },
+  { icon: BarChart3, f: "One dashboard for everything", b: "Revenue, sign-ups and operations at a glance. Finally know your real numbers." },
 ];
 
 export function Features() {
@@ -20,9 +20,9 @@ export function Features() {
       <SectionHeading
         id="features-title"
         tone="light"
-        eyebrow="Everything you get — free to build"
-        title="Features That Fill Rosters. Benefits You'll See in Your Bank Account."
-        lede="We build and run all of it. You pay only a small cut of the new registrations it brings in."
+        eyebrow="Custom fixes, built for sports"
+        title="Every Gap Your Old Software Leaves, Fixed."
+        lede="We don't sell you another platform. We build the exact pieces you're missing, for universities, leagues, travel teams, camps and clinics. Pick one fix or all of them."
       />
       <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {features.map((x) => (
@@ -39,12 +39,12 @@ export function Features() {
         ))}
       </div>
       <div className="mt-10 grid gap-4 rounded-2xl bg-navy-900 p-7 text-center sm:grid-cols-3 sm:p-8">
-        <div><p className="text-2xl font-semibold text-white">$0</p><p className="text-sm text-slate-400">to build and launch</p></div>
-        <div><p className="text-2xl font-semibold text-white">7 days</p><p className="text-sm text-slate-400">to go live, or your first month is free</p></div>
-        <div><p className="text-2xl font-semibold text-white">$0</p><p className="text-sm text-slate-400">if it brings you no new sign-ups</p></div>
+        <div><p className="text-2xl font-semibold text-white">Custom</p><p className="text-sm text-slate-400">built around how you run</p></div>
+        <div><p className="text-2xl font-semibold text-white">30 days</p><p className="text-sm text-slate-400">free to use, start to finish</p></div>
+        <div><p className="text-2xl font-semibold text-white">$0</p><p className="text-sm text-slate-400">if you decide it’s not for you</p></div>
       </div>
       <div className="mt-8 flex justify-center">
-        <CtaLink href="/apply?offer=free-build" location="features">Claim My Free Build</CtaLink>
+        <CtaLink href="/apply?offer=free-month" location="features">Start My Free Month</CtaLink>
       </div>
     </Section>
   );

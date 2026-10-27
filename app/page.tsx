@@ -68,13 +68,13 @@ export default async function Home({ searchParams }: PageProps<"/">) {
       },
       {
         "@type": "ProfessionalService",
-        name: `${brand.name} Performance-Based Registration & Revenue Engine`,
+        name: `${brand.name} Custom Sports Systems`,
         url: siteUrl,
         provider: { "@id": `${siteUrl}/#org` },
         areaServed: "US",
         serviceType: "Custom technology, automation and integrations for sports businesses",
         audience: audiences.map((a) => ({ "@type": "BusinessAudience", name: a.nav })),
-        offers: { "@type": "Offer", price: "0", priceCurrency: "USD", name: "Free build, performance-based pricing", url: `${siteUrl}/apply` },
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD", name: "First month free", url: `${siteUrl}/apply` },
       },
       {
         "@type": "FAQPage",

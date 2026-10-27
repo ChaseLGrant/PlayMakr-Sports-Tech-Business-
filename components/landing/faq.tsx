@@ -12,7 +12,7 @@ export const faqs = [
   },
   {
     q: "What does it cost?",
-    a: "Nothing up front. We build and run your registration and revenue engine for free, and take a small cut of each new registration it brings in. Your exact rate is agreed in writing before anything goes live. We never take a cut of families you already had, and if it brings in no new sign-ups, you pay nothing.",
+    a: "Your first month is free. We build your custom system, you use it for 30 days, and only then decide. After that it's a simple monthly rate, agreed in writing before we build, with no contract. Cancel anytime.",
   },
   {
     q: "How long does implementation take?",
@@ -36,7 +36,7 @@ export const faqs = [
   },
   {
     q: "What's the catch?",
-    a: "There isn't one. We only make money when you do, so we're motivated to fill your roster. That's why spots are limited: we take one program per sport, per area, and only those with room to grow.",
+    a: "There isn't one. We'd rather prove it works than sell you on a promise. If it doesn't make your life easier in 30 days, you walk away and owe nothing.",
   },
 ];
 

@@ -71,7 +71,7 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-2">
           <CtaLink href="/apply" location="header" size="md" className="hidden sm:inline-flex">
-            Claim My Free Build
+            Start My Free Month
           </CtaLink>
           <button
             type="button"
@@ -111,7 +111,7 @@ export function Header() {
             ))}
           </ul>
           <CtaLink href="/apply" location="mobile_nav" className="mt-5 w-full" onClick={() => setOpen(false)}>
-            Claim My Free Build
+            Start My Free Month
           </CtaLink>
         </nav>
       )}

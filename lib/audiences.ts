@@ -39,7 +39,7 @@ export const audiences: Audience[] = [
       "Software audit: what you can cut or connect",
       "A prioritized 90-day action plan",
     ],
-    bonus: "Founding partners get their abandoned-registration recovery flow built free.",
+    bonus: "Founding partners get their abandoned-registration recovery flow built custom and free for the first month.",
     metaDescription: "Free League Revenue Leak Report for youth and adult sports leagues. Find lost registrations and unpaid balances, and get them back.",
   },
   {
@@ -64,7 +64,7 @@ export const audiences: Audience[] = [
       "Pricing and add-on opportunities (extended day, gear, multi-week)",
       "A prioritized plan to sell out sooner",
     ],
-    bonus: "Founding partners get their returning-camper early-bird campaign built free.",
+    bonus: "Founding partners get their returning-camper early-bird campaign built custom and free for the first month.",
     metaDescription: "Free Camp Sell-Out Plan for sports camps. Recover lost registrations, re-book last summer's families and fill every session faster.",
   },
   {
@@ -89,7 +89,7 @@ export const audiences: Audience[] = [
       "Package and membership pricing ideas",
       "A prioritized plan to fill your calendar",
     ],
-    bonus: "Founding partners get their instant-reply booking assistant built free.",
+    bonus: "Founding partners get their instant-reply booking assistant built custom and free for the first month.",
     metaDescription: "Free Booked-Calendar Blueprint for sports clinics and private trainers. Answer every inquiry fast and fill open coach hours.",
   },
   {
@@ -114,7 +114,7 @@ export const audiences: Audience[] = [
       "Integration options with your current platforms",
       "A prioritized revenue roadmap for leadership",
     ],
-    bonus: "Founding partners get one camp or clinic registration funnel rebuilt free.",
+    bonus: "Founding partners get one camp or clinic registration system rebuilt custom and free for the first month.",
     metaDescription: "Free Athletics Revenue Opportunity Review for universities and college athletic departments. Grow camp, ticketing and donor revenue.",
   },
   {
@@ -139,7 +139,7 @@ export const audiences: Audience[] = [
       "Dynamic pricing and off-peak package ideas",
       "A prioritized plan to raise utilization",
     ],
-    bonus: "Founding partners get their open-slot auto-offer system built free.",
+    bonus: "Founding partners get their open-slot auto-offer system built custom and free for the first month.",
     metaDescription: "Free Empty-Hours Revenue Report for sports facilities and complexes. Fill unbooked courts, fields and cages automatically.",
   },
   {
@@ -164,7 +164,7 @@ export const audiences: Audience[] = [
       "Director admin time and software overlap audit",
       "A prioritized plan for your next tryout season",
     ],
-    bonus: "Founding partners get their tryout follow-up sequence built free.",
+    bonus: "Founding partners get their tryout follow-up sequence built custom and free for the first month.",
     metaDescription: "Free Tryout-to-Roster Report for youth sports clubs and academies. Sign more tryout families and keep them next season.",
   },
   {
@@ -189,7 +189,7 @@ export const audiences: Audience[] = [
       "Event-week operations and communication audit",
       "A prioritized plan to fill your next event",
     ],
-    bonus: "Founding partners get their past-team win-back campaign built free.",
+    bonus: "Founding partners get their past-team win-back campaign built custom and free for the first month.",
     metaDescription: "Free Bracket Fill Plan for sports tournaments and showcases. Bring back past teams and fill brackets weeks earlier.",
   },
 ];

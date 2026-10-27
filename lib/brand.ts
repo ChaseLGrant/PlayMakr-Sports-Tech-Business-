@@ -5,7 +5,7 @@
 export const brand = {
   name: "PlayMakr",
   legalName: "PlayMakr Technologies (placeholder legal entity)",
-  tagline: "Less Software. Better Systems. More Revenue.",
+  tagline: "We Build Your Custom System. Try It Free for 30 Days.",
   description:
     "PlayMakr builds custom revenue and automation systems for sports businesses: leagues, camps, clinics, universities, facilities, clubs and tournaments.",
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@example.com",
