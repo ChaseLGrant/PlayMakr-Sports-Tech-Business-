@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { brand } from "@/lib/brand";
 import { Logo } from "./logo";
+import { audiences } from "@/lib/audiences";
 
 export function Footer() {
   return (
     <footer className="border-t border-white/[0.06] bg-ink-950 text-slate-400">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr_1fr] lg:px-8">
         <div>
           <Logo />
           <p className="mt-4 max-w-sm text-sm leading-relaxed">
@@ -14,6 +15,14 @@ export function Footer() {
           <a href={`mailto:${brand.contactEmail}`} className="mt-4 inline-block text-sm text-slate-300 hover:text-white">
             {brand.contactEmail}
           </a>
+        </div>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Who we serve</p>
+          <ul className="mt-4 space-y-2.5 text-sm">
+            {audiences.map((a) => (
+              <li key={a.slug}><Link className="hover:text-white" href={`/for/${a.slug}`}>{a.nav}</Link></li>
+            ))}
+          </ul>
         </div>
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Explore</p>

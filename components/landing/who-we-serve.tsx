@@ -1,45 +1,55 @@
 import { Trophy, Tent, Target, GraduationCap, Building2, Medal, Dumbbell, Briefcase } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/section";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 
 const audiences = [
   {
     icon: Trophy,
+    href: "/for/leagues",
     title: "Leagues & associations",
     body: "Fill divisions faster, collect fees on time and stop chasing rosters, waivers and referee schedules by hand.",
   },
   {
     icon: Tent,
+    href: "/for/camps",
     title: "Camps",
     body: "Sell out sessions, recover abandoned registrations and bring last summer's families back automatically.",
   },
   {
     icon: Target,
+    href: "/for/clinics",
     title: "Clinics & private training",
     body: "Turn inquiries into booked sessions in minutes and fill open coach hours before they go to waste.",
   },
   {
     icon: GraduationCap,
+    href: "/for/universities",
     title: "Universities & college athletics",
     body: "Grow camp, ticketing, sponsorship and donor revenue with systems your staff actually has time to run.",
   },
   {
     icon: Building2,
+    href: "/for/facilities",
     title: "Facilities & complexes",
     body: "Book every court, field and cage hour, and offer open slots to waitlisted teams automatically.",
   },
   {
     icon: Medal,
+    href: "/for/clubs",
     title: "Clubs & academies",
     body: "Win more tryout families, cut admin time for directors and keep players re-enrolling season after season.",
   },
   {
     icon: Dumbbell,
+    href: "/for/tournaments",
     title: "Tournaments & showcases",
     body: "Fill brackets earlier, sell more team entries and handle check-in, payments and schedules in one place.",
   },
   {
     icon: Briefcase,
+    href: "/apply",
     title: "Any sports business",
     body: "Recruiting services, performance centers, sports retail and more. If it runs on athletes and families, we can grow it.",
   },
@@ -59,13 +69,18 @@ export function WhoWeServe() {
           <Reveal
             as="li"
             key={a.title}
-            className="flex flex-col rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 transition-colors hover:border-electric-400/40 hover:bg-white/[0.04]"
+            className="rounded-2xl border border-white/[0.08] bg-white/[0.02] transition-colors hover:border-electric-400/40 hover:bg-white/[0.04]"
           >
+            <Link href={a.href} className="group flex h-full flex-col p-6">
             <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-electric-500/10 text-electric-300">
               <a.icon size={19} aria-hidden />
             </span>
             <h3 className="mt-5 text-base font-semibold text-white">{a.title}</h3>
-            <p className="mt-2 text-[14.5px] leading-relaxed text-slate-400">{a.body}</p>
+            <p className="mt-2 flex-1 text-[14.5px] leading-relaxed text-slate-400">{a.body}</p>
+            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-electric-300 group-hover:text-electric-200">
+              {a.href === "/apply" ? "Apply for a free audit" : "See your free offer"} <ArrowRight size={14} aria-hidden className="transition-transform group-hover:translate-x-0.5" />
+            </span>
+            </Link>
           </Reveal>
         ))}
       </ul>

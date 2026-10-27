@@ -82,6 +82,15 @@ export function ApplicationForm() {
   const startedAt = useRef<number>(0);
   const started = useRef(false);
   const formRef = useRef<HTMLFormElement>(null);
+
+  // Prefill organization type from audience landing pages (/apply?type=camp_clinic)
+  useEffect(() => {
+    const t = new URLSearchParams(window.location.search).get("type");
+    if (t && organizationTypes.some((o) => o.value === t)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time prefill from URL after mount
+      setValues((v) => (v.organizationType ? v : { ...v, organizationType: t }));
+    }
+  }, []);
   const headingRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
