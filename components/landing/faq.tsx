@@ -11,8 +11,8 @@ export const faqs = [
     a: "Only sports. We work with leagues and associations, camps, clinics and private training companies, universities and college athletic departments, facilities and multi-sport complexes, clubs and academies, tournament and showcase operators, and other sports businesses that serve athletes and families. If it is sports and it has revenue to grow, it is a fit.",
   },
   {
-    q: "How much does custom development cost?",
-    a: "It depends on scope. A focused automation costs far less than a custom portal or a multi-system integration. After the audit, we provide a written proposal with defined scope and pricing, so you know the investment before committing. Founding partners receive preferred pricing, which is set out in that proposal.",
+    q: "What does it cost?",
+    a: "Nothing up front. We build and run your registration and revenue engine for free, and take a small cut of each new registration it brings in. Your exact rate is agreed in writing before anything goes live. We never take a cut of families you already had, and if it brings in no new sign-ups, you pay nothing.",
   },
   {
     q: "How long does implementation take?",
@@ -35,8 +35,8 @@ export const faqs = [
     a: "We measure results against the goals set at the start, then tune workflows as your team uses the system. Contracted founding partner projects include 30 days of complimentary post-launch optimization. Ongoing support and improvement plans are available and defined in writing.",
   },
   {
-    q: "What is included in the free audit?",
-    a: "A review of your existing software and workflows, identification of redundant subscriptions, a preliminary administrative efficiency assessment, missed revenue opportunities, high-level automation opportunities and prioritized technology recommendations. The audit is free with no obligation; implementation is a separate paid service.",
+    q: "What's the catch?",
+    a: "There isn't one. We only make money when you do, so we're motivated to fill your roster. That's why spots are limited: we take one program per sport, per area, and only those with room to grow.",
   },
 ];
 

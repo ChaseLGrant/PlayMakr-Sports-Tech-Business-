@@ -4,6 +4,7 @@ import { Footer } from "@/components/site/footer";
 import { PageTracker } from "@/components/site/page-tracker";
 import { Hero } from "@/components/landing/hero";
 import { Problems } from "@/components/landing/problems";
+import { Features } from "@/components/landing/features";
 import { WhoWeServe } from "@/components/landing/who-we-serve";
 import { Solution } from "@/components/landing/solution";
 import { RevenueCalculator } from "@/components/landing/calculator";
@@ -67,13 +68,13 @@ export default async function Home({ searchParams }: PageProps<"/">) {
       },
       {
         "@type": "ProfessionalService",
-        name: `${brand.name} Sports Technology & Revenue Audit`,
+        name: `${brand.name} Performance-Based Registration & Revenue Engine`,
         url: siteUrl,
         provider: { "@id": `${siteUrl}/#org` },
         areaServed: "US",
         serviceType: "Custom technology, automation and integrations for sports businesses",
         audience: audiences.map((a) => ({ "@type": "BusinessAudience", name: a.nav })),
-        offers: { "@type": "Offer", price: "0", priceCurrency: "USD", name: "Free Sports Technology & Revenue Audit", url: `${siteUrl}/apply` },
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD", name: "Free build, performance-based pricing", url: `${siteUrl}/apply` },
       },
       {
         "@type": "FAQPage",
@@ -88,6 +89,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
       <PageTracker variant={variant} />
       <main id="main">
         <Hero variant={variant} />
+        <Features />
         <WhoWeServe />
         <Problems />
         <Solution />

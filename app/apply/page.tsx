@@ -8,7 +8,7 @@ import { Eyebrow } from "@/components/ui/section";
 import { brand } from "@/lib/brand";
 
 export const metadata: Metadata = {
-  title: "Apply for Your Free Audit",
+  title: "Claim Your Free Build",
   description: `Apply for a free Sports Technology & Revenue Audit and join ${brand.programName} founding partner program.`,
   alternates: { canonical: "/apply" },
 };
