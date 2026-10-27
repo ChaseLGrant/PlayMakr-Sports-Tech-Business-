@@ -12,6 +12,7 @@ import { Founding100 } from "@/components/landing/founding-100";
 import { Examples } from "@/components/landing/examples";
 import { Faq, faqs } from "@/components/landing/faq";
 import { FinalCta } from "@/components/landing/final-cta";
+import { audiences } from "@/lib/audiences";
 import { brand, siteUrl } from "@/lib/brand";
 import { getDb } from "@/lib/db";
 import { foundingCount } from "@/lib/server/leads";
@@ -47,10 +48,32 @@ export default async function Home({ searchParams }: PageProps<"/">) {
     "@graph": [
       {
         "@type": "Organization",
+        "@id": `${siteUrl}/#org`,
         name: brand.name,
         url: siteUrl,
+        logo: `${siteUrl}/brand/icon.png`,
+        image: `${siteUrl}/brand/lockup-dark.png`,
         description: brand.description,
         email: brand.contactEmail,
+        areaServed: "US",
+        knowsAbout: ["sports business technology", "registration automation", "sports marketing automation", "sports facility utilization"],
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        url: siteUrl,
+        name: brand.name,
+        publisher: { "@id": `${siteUrl}/#org` },
+      },
+      {
+        "@type": "ProfessionalService",
+        name: `${brand.name} Sports Technology & Revenue Audit`,
+        url: siteUrl,
+        provider: { "@id": `${siteUrl}/#org` },
+        areaServed: "US",
+        serviceType: "Custom technology, automation and integrations for sports businesses",
+        audience: audiences.map((a) => ({ "@type": "BusinessAudience", name: a.nav })),
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD", name: "Free Sports Technology & Revenue Audit", url: `${siteUrl}/apply` },
       },
       {
         "@type": "FAQPage",

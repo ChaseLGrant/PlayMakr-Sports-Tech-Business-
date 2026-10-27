@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono-face", display: "swap" });
 
-const title = `${brand.name} — Custom Technology for Sports Organizations`;
+const title = `${brand.name} | Revenue Growth Technology for Sports Businesses`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -23,13 +23,26 @@ export const metadata: Metadata = {
     "league management automation",
     "sports camp registration software",
     "college athletics revenue",
+    "sports business consulting",
+    "youth sports marketing automation",
+    "sports facility booking software",
+    "camp registration automation",
+    "tournament registration software",
+    "sports club retention",
+    "PlayMakr",
   ],
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
+  category: "technology",
+  formatDetection: { telephone: false },
   openGraph: {
     type: "website",
     url: siteUrl,
     siteName: brand.name,
     title,
     description: brand.description,
+    locale: "en_US",
   },
   twitter: { card: "summary_large_image", title, description: brand.description },
   alternates: { canonical: "/" },

@@ -8,7 +8,7 @@ import { CtaLink } from "@/components/ui/tracked-link";
 import { Section, SectionHeading, Eyebrow } from "@/components/ui/section";
 import { RevenueCalculator } from "@/components/landing/calculator";
 import { audiences, getAudience } from "@/lib/audiences";
-import { brand } from "@/lib/brand";
+import { brand, siteUrl } from "@/lib/brand";
 
 export const dynamicParams = false;
 
@@ -23,6 +23,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${a.offerName} · ${a.nav}`,
     description: a.metaDescription,
     alternates: { canonical: `/for/${a.slug}` },
+    keywords: [a.nav.toLowerCase(), `${a.nav.toLowerCase()} software`, `${a.nav.toLowerCase()} revenue`, `${a.nav.toLowerCase()} automation`, "sports business technology"],
+    openGraph: { title: `${a.hook} ${a.hookAccent}`, description: a.offerLine, url: `/for/${a.slug}`, type: "website" },
+    twitter: { card: "summary_large_image", title: `${a.hook} ${a.hookAccent}`, description: a.offerLine },
   };
 }
 
@@ -30,6 +33,28 @@ export default async function AudiencePage({ params }: { params: Promise<{ slug:
   const a = getAudience((await params).slug);
   if (!a) notFound();
   const applyHref = `/apply?type=${a.orgType}&offer=${a.slug}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        name: `${a.offerName} for ${a.nav}`,
+        description: a.offerLine,
+        url: `${siteUrl}/for/${a.slug}`,
+        provider: { "@type": "Organization", name: brand.name, url: siteUrl },
+        audience: { "@type": "BusinessAudience", name: a.nav },
+        areaServed: "US",
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD", url: `${siteUrl}${applyHref}` },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: brand.name, item: siteUrl },
+          { "@type": "ListItem", position: 2, name: a.nav, item: `${siteUrl}/for/${a.slug}` },
+        ],
+      },
+    ],
+  };
 
   return (
     <>
@@ -125,6 +150,7 @@ export default async function AudiencePage({ params }: { params: Promise<{ slug:
       <Footer />
       <div aria-hidden className="h-16 sm:hidden" />
       <MobileCta href={applyHref} slug={a.slug} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
     </>
   );
 }
